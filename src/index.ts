@@ -1,7 +1,7 @@
 import beautify, { CoreBeautifyOptions as BeautifyOptions } from 'js-beautify';
 import prettier, { Options as PrettierOptions } from 'prettier';
 
-type FormattingOptions = BeautifyOptions & PrettierOptions;
+type FormattingOptions = (BeautifyOptions & PrettierOptions) | any;
 
 function format(unformattedJsString: string, options: FormattingOptions = {}) {
   const formattedCodeStringStep1 = beautify.js(
