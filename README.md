@@ -1,3 +1,3 @@
-# Typescript to Javascript compiler
+# Javascript formatted
 
-Typescript to javascript compiler that only drops the keywords. No other changes to the code.
+Programatically format javascript code. Given a code string, it returns the formatted/pretty version of that code.
